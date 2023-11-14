@@ -1,0 +1,28 @@
+﻿<Window x:Class="POE.AccomodationWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:POE"
+        mc:Ignorable="d"
+        Title="Accomodation" Height="400" Width="400" Background="#f58c8b" WindowStyle="None">
+    <Grid>
+        <StackPanel Margin="20" >
+            <Label Content="ACCOMMODATION" FontSize="20px" HorizontalAlignment="Center"/>
+            <RadioButton x:Name="RadioButtonRenting" Margin="0,0,0,15" Content="Renting" IsChecked="False" GroupName="AccommodationGroup" Checked="RadioButtonRenting_Checked"/>
+            <Label x:Name="LabelRent" Content="Enter monthly rental amount" Visibility="Collapsed"/>
+            <TextBox x:Name="TextBoxRent" Visibility="Collapsed"/>
+            <RadioButton x:Name="RadioButtonBuying" Margin="0,0,0,15" Content="Buying" IsChecked="False" GroupName="AccommodationGroup" Checked="RadioButtonBuying_Checked"/>
+            <Label x:Name="LabelPrincipleHomeLoan" Content="Enter the purchase price of the property:" Visibility="Collapsed"/>
+            <TextBox x:Name="TextBoxPrincipleHomeLoan" Visibility="Collapsed"/>
+            <Label x:Name="LabelDepositHomeLoan" Content="Enter the total deposit:" Visibility="Collapsed"/>
+            <TextBox x:Name="TextBoxDepositHomeLoan" Visibility="Collapsed"/>
+            <Label x:Name="LabelInterestHomeLoan" Content="Enter the interest rate:" Visibility="Collapsed"/>
+            <TextBox x:Name="TextBoxInterestHomeLoan" Visibility="Collapsed"/>
+            <Label x:Name="LabelMonthsHomeLoan" Content="Enter the number of months to repay:" Visibility="Collapsed"/>
+            <TextBox x:Name="TextBoxMonthsHomeLoan" Margin="0,0,0,15" Visibility="Collapsed"/>
+            <Button x:Name="ButtonSaveAccommodation" Content="Save" Click="ButtonSaveAccommodation_Click"/>
+        </StackPanel>
+        <Button x:Name="ButtonNextAccomodation" Content="Next" Width="70px" Margin="0,15,0,0" HorizontalAlignment="Right" VerticalAlignment="Bottom" Click="NextAccomodation" />
+    </Grid>
+</Window>

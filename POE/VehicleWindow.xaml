@@ -1,0 +1,28 @@
+﻿<Window x:Class="POE.VehicleWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:POE"
+        mc:Ignorable="d"
+        Title="Vehicle" Height="423" Width="400" Background="#f58c8b" WindowStyle="None">
+    <Grid>
+        <StackPanel Margin="20" >
+            <Label Content="VEHICLE LOAN" FontSize="20px" HorizontalAlignment="Center"/>
+            <CheckBox x:Name="CheckBoxVehicle" Content="Purchasing Vehicle" IsChecked="False" Checked="CheckBoxVehicle_Checked" Unchecked="CheckBoxVehicle_Unchecked"/>
+            <Label x:Name="LabelModelAndMakeVehicleLoan" Content="Enter the model and make of the vehicle:" Visibility="Collapsed"/>
+            <TextBox x:Name="TextBoxModelAndMakeVehicleLoan" Visibility="Collapsed"/>
+            <Label x:Name="LabelPrincipleVehicleLoan" Content="Enter the purchase price of the vehicle:" Visibility="Collapsed"/>
+            <TextBox x:Name="TextBoxPrincipleVehicleLoan" Visibility="Collapsed"/>
+            <Label x:Name="LabelDepositVehicleLoan" Content="Enter the total deposit of the vehicle:" Visibility="Collapsed"/>
+            <TextBox x:Name="TextBoxDepositVehicleLoan" Visibility="Collapsed"/>
+            <Label x:Name="LabelInterestVehicleLoan" Content="Enter the interest rate for the vehicle:" Visibility="Collapsed"/>
+            <TextBox x:Name="TextBoxInterestVehicleLoan" Visibility="Collapsed"/>
+            <Label x:Name="LabelInsuranceVehicleLoan" Content="Enter the estimated insurance premium for the vehicle:" Visibility="Collapsed"/>
+            <TextBox x:Name="TextBoxInsuranceVehicleLoan" Visibility="Collapsed"/>
+            <Label Content="Please note that vehicles will be repaid over a period of 5 years" Margin="0,0,0,15" IsEnabled="False"/>
+            <Button x:Name="ButtonSaveVehicleLoan" Content="Save" Visibility="Collapsed" Click="ButtonSaveVehicleLoan_Click" />
+        </StackPanel>
+        <Button x:Name="ButtonNextVehicle" Content="Next" Width="70px" Margin="0,15,0,0" HorizontalAlignment="Right" VerticalAlignment="Bottom" Click="NextVehicle" />
+    </Grid>
+</Window>

@@ -1,0 +1,29 @@
+﻿<Window x:Class="POE.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:POE"
+        mc:Ignorable="d"
+        Title="Budget Application" Height="287" Width="359" Background="#f58c8b" WindowStyle="None">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Label Grid.ColumnSpan="2" FontSize="30px" HorizontalAlignment="Center" FontWeight="Bold" 
+              Foreground="#FFE0E0E0" IsEnabled="False">
+            <TextBlock Text="WELCOME TO THE BUDGET APPLICATION"  TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Center" />
+        </Label>
+
+
+        <Label Grid.Column="0" Grid.Row="1" Foreground="#3283a8" IsEnabled="False">
+            <TextBlock Text="To start running the application, press start" FontSize="30" TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
+        </Label>
+        <Button Grid.Column="1" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" x:Name="ButtonStartApplication" Content="START" FontSize="20" Width="85" Height="50" Click="StartApplication" />
+    </Grid>
+</Window>

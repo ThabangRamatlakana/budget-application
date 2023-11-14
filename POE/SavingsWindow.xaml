@@ -1,0 +1,23 @@
+﻿<Window x:Class="POE.SavingsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:POE"
+        mc:Ignorable="d"
+        Title="Savings" Height="400" Width="400" Background="#f58c8b" WindowStyle="None">
+    <Grid>
+        <StackPanel Margin="20"  Grid.Row="2" Grid.Column="1" Grid.RowSpan="1">
+            <Label Content="SAVINGS" FontSize="20px" HorizontalAlignment="Center"/>
+            <CheckBox x:Name="CheckBoxSavings" Content="Savings" IsChecked="False" Checked="CheckBoxSavings_Checked"/>
+            <Label x:Name="LabelSavings" Content="Enter your savings goal:" Visibility="Collapsed"/>
+            <TextBox x:Name="TextBoxFinalAmountSavings" Visibility="Collapsed"/>
+            <Label x:Name="LabelInterestSavings" Content="Enter your interest rate:" Visibility="Collapsed"/>
+            <TextBox x:Name="TextBoxInterestSavings" Visibility="Collapsed"/>
+            <Label x:Name="LabelYearsSavings" Content="Enter your number of years:" Visibility="Collapsed"/>
+            <TextBox x:Name="TextBoxYearsSavings" Margin="0,0,0,15" Visibility="Collapsed"/>
+            <Button x:Name="ButtonSaveSavings" Content="Save" Visibility="Collapsed" Click="ButtonSaveSavings_Click" />
+        </StackPanel>
+        <Button x:Name="ButtonNext" Content="Next" Width="70px" Margin="0,15,0,0" HorizontalAlignment="Right" VerticalAlignment="Bottom" Click="Next" />
+    </Grid>
+</Window>

@@ -1,0 +1,27 @@
+﻿<Window x:Class="POE.ExpenseWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:POE"
+        mc:Ignorable="d"
+        Title="Expense" Height="400" Width="400" Background="#f58c8b" WindowStyle="None">
+    <Grid>
+        <StackPanel Margin="20"  Grid.Row="0" Grid.Column="1" Grid.RowSpan="2">
+            <Label Content="EXPENSE" FontSize="20px" HorizontalAlignment="Center"/>
+            <Label Content="Enter your groceries expense:"/>
+            <TextBox x:Name="TextBoxGroceries"/>
+            <Label Content="Enter your water and electricity expense:"/>
+            <TextBox x:Name="TextBoxWaterAndElectricity"/>
+            <Label Content="Enter your travel expense:"/>
+            <TextBox x:Name="TextBoxTravel"/>
+            <Label Content="Enter your cellphone costs expense:"/>
+            <TextBox x:Name="TextBoxCellphone"/>
+            <Label Content="Enter other expenses:"/>
+            <TextBox x:Name="TextBoxOther"/>
+            <Button Margin="0,15,0,0" x:Name="ButtonSaveExpenses" Content="Save" Click="ButtonSaveExpenses_Click"/>
+            <Button x:Name="ButtonNextExpense" Content="Next" Width="70px" Margin="0,15,0,0" HorizontalAlignment="Right" VerticalAlignment="Bottom" Click="NextExpense" />
+        </StackPanel>
+       
+    </Grid>
+</Window>

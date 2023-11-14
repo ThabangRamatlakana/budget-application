@@ -1,0 +1,26 @@
+﻿<Window x:Class="POE.CalculateWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:POE"
+        mc:Ignorable="d"
+        Title="Calculate" Height="400" Width="400" Background="#f58c8b" WindowStyle="None" Loaded="CalculateWindow_Loaded">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" FontSize="20px" HorizontalAlignment="Center"
+              Foreground="#FFE0E0E0" IsEnabled="False">
+            <TextBlock Text="To calculate, press the calculate button:" TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Center" />
+        </Label>
+        <Button x:Name="ButtonCalculate" Content="Calculate" Width="70px" Margin="23,38,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Calculate_Click"   />
+        <Button x:Name="ButtonExit" Grid.Row="0" Grid.Column="1" Content="EXIT" Width="70px" Margin="0,15,0,0" HorizontalAlignment="Right" VerticalAlignment="Bottom" Click="ExitApplication" />
+        <RichTextBox Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" x:Name="RichTextBoxDisplayInfo" Background="#f58c8b"/>
+    </Grid>
+</Window>
